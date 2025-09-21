@@ -91,16 +91,16 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Drawer Menu */}
-      <div className={`fixed top-0 right-0 h-full z-20 bg-white shadow-lg transition-all duration-300 ${visible ? 'w-full px-6 py-5' : 'w-0 px-0 py-0 overflow-hidden'}`}>
+      <div className={`fixed top-0 right-0 h-auto z-20 bg-white shadow-lg transition-all duration-300 ${visible ? 'w-full px-6 py-5' : 'w-0 px-0 py-0 overflow-hidden'}`}>
         <div onClick={() => setVisible(false)} className='flex items-center gap-2 mb-6 cursor-pointer'>
           <img src={assets.dropdown_icon} className='h-4 rotate-180' alt='back' />
           <p>Back</p>
         </div>
         <nav className='flex flex-col gap-4 text-gray-700 text-base'>
-          <NavLink to="/" onClick={() => setVisible(false)}>Home</NavLink>
-          <NavLink to="/collection" onClick={() => setVisible(false)}>Collection</NavLink>
-          <NavLink to="/about" onClick={() => setVisible(false)}>About</NavLink>
-          <NavLink to="/contact" onClick={() => setVisible(false)}>Contact</NavLink>
+          <NavLink className="p-1" to="/" onClick={() => setVisible(false)}>Home</NavLink>
+          <NavLink  className="p-1" to="/collection" onClick={() => setVisible(false)}>Collection</NavLink>
+          <NavLink   className="p-1" to="/about" onClick={() => setVisible(false)}>About</NavLink>
+          <NavLink   className="p-1" to="/contact" onClick={() => setVisible(false)}>Contact</NavLink>
         </nav>
       </div>
     </div>

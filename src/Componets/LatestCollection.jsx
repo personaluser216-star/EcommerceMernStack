@@ -17,8 +17,9 @@ const LatestCollection = () => {
     <div className='my-10'>
       <div className='text-center md:py-8 md:text-3xl'>
         <Title text1={'LATEST'} text2={'COLLECTIONS'} />
-        <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ratione similique delectus.
+        <p className='md:w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-500 mb-6'>
+         The latest clothing collection blends contemporary trends with timeless elegance, featuring bold colors, sustainable fabrics, and versatile silhouettes.
+
         </p>
       </div>
 
@@ -30,6 +31,7 @@ const LatestCollection = () => {
             image={item.image}
             name={item.name}
             price={item.price}
+            className="border border-black"
           />
         ))}
       </div>

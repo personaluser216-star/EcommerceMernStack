@@ -1,32 +1,41 @@
 import React from 'react';
 import { assets } from '../assets/assets';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <div className='mt-40 text-sm'>
+    <div className='md:mt-40 mt-16 text-sm '>
       {/* 3-column grid layout */}
       <div className='grid grid-cols-1 sm:grid-cols-[3fr_1fr_1fr] gap-14 my-10'>
         <div>
-          <img src={assets.logo} className='w-32 mb-5' alt='logo' />
+          <img src={assets.logo} className='w-32 md:mb-5 mb-3' alt='logo' />
           <p className='w-full md:w-2/3 text-gray-600'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab recusandae adipisci beatae saepe.
+            Here fashion should be bold, effortless, and made for real life. Our collections are designed with care, combining trend-forward styles with everyday versatility. Whether you're dressing up or keeping it casual, Prara helps you express your style with confidence.
           </p>
         </div>
 
         <div>
-          <p className='text-xl font-medium mb-5'>COMPANY</p>
+          <p className='text-xl font-medium md:mb-5 mb-3'>COMPANY</p>
           <ul className='flex flex-col gap-1 text-gray-600'>
-            <li>Home</li>
-            <li>Collection</li>
-            <li>About Us</li>
-            <li>Contact</li>
-          </ul>
+  <li>
+    <Link to="/">Home</Link>
+  </li>
+  <li>
+    <Link to="/collection">Collection</Link>
+  </li>
+  <li>
+    <Link to="/about">About Us</Link>
+  </li>
+  <li>
+    <Link to="/contact">Contact</Link>
+  </li>
+</ul>
         </div>
 
         <div>
-          <p className='text-xl font-medium mb-5'>Get In Touch</p>
+          <p className='text-xl font-medium md:mb-5 mb-3'>Get In Touch</p>
           <ul className='flex flex-col gap-1 text-gray-600'>
-            <li>+1-222-456-7890</li>
+            <li>+91 9879952071</li>
             <li>contact@foreveryou.com</li>
           </ul>
         </div>
