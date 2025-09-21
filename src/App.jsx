@@ -17,12 +17,14 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Orders from './Pages/Orders';
 import Verify from './Pages/Verify';
+import ScrollToTop from './Componets/ScrollToTop';
 
 const App = () => {
   return (
     <ShopContextProvider> {/* ✅ wrap entire app */}
       <div className='pt-2 pl-8 pr-8'>
         <BrowserRouter>
+        <ScrollToTop/>
         <ToastContainer/>
           <Navbar />
           <SerachBar/>
